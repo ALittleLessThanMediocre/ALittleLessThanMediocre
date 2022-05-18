@@ -23,23 +23,15 @@ class CitizenScientist:
 
     def say_hi(self):
         print(
-            """Hello, Friend.
+            f"""Hello, Friend.
 
-I'm {name}, I live in {location}. I'm currently a {role} and recently I've been 
-focusing on {focus} for my personal growth.
+I'm {self.name}, I live in {self.location}. I'm currently a {self.role} and recently I've been 
+focusing on {self.knowledge_base[0]} for my personal growth.
 
-I have a wide array of interests, but most of them in tech are {knowledge_base} and {last}.
+I have a wide array of interests, but most of them in tech are {", ".join(self.knowledge_base[1:-2])} and {self.knowledge_base[-1]}.
 
 Feel free to reach out :)
- """.format(
-                name=self.name,
-                location=self.location,
-                role=self.role,
-                focus=self.knowledge_base[0],
-                knowledge_base=", ".join(self.knowledge_base[1:-2]),
-                last=self.knowledge_base[-1]
-            )
-        )
+ """)
 
 
 me = CitizenScientist()
