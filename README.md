@@ -11,7 +11,7 @@ class CitizenScientist:
     def __init__(self):
         self.name = "David"
         self.role = "Citizen Scientist"
-        self.location = "Johannesburg, South Africa"
+        self.location = "Sweden"
         self.knowledge_base = [
             "Software Enginnering",
             "Computer Science",
